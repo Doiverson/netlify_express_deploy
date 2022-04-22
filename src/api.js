@@ -1,4 +1,5 @@
 const express = require("express");
+const cors =require("cors");
 const serverless = require("serverless-http");
 
 const app = express();
@@ -6,6 +7,7 @@ const router = express.Router();
 
 const stripe = require("stripe")('sk_test_Hrs6SAopgFPF0bZXSN3f6ELN');
 
+app.use(cors());
 app.use(express.json());
 
 const calculateOrderAmount = (items) => {
