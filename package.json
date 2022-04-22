@@ -1,0 +1,15 @@
+{
+  "name": "untitled3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^3.0.1"
+  }
+}
